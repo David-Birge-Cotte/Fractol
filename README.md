@@ -5,15 +5,15 @@ Tested on MacOS and Linux but it should be working on Windows too.
 --------------------- COMPILATION ------------------------
 
 Use the Makefile to compile (make).
-Needs SDL 2.0+ (
+Needs SDL 2.0+
 
 ------------------------ USAGE ----------------------------
 
 usage: ./fractol [fractal]
 fractals:
- -> Mandelbrot
- -> Julia
- -> Burning_Ship
++ Mandelbrot
++ Julia
++ Burning_Ship
  
 ----------------------- CONTROLS --------------------------
 
