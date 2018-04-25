@@ -1,5 +1,5 @@
 # Fractol
-Fractal viewer in C + SDL
+Multithreaded fractal viewer in C with SDL display.
 Tested on MacOS and Linux but it should be working on Windows too.
 
 --------------------- COMPILATION ------------------------
