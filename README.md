@@ -2,12 +2,6 @@
 Fractal viewer in C + SDL
 Tested on MacOS and Linux but it should be working on Windows too.
 
-
-![MANDELBROT](https://i.imgur.com/bx1Gl4e.png)
-![JULIA (interactible)](https://i.imgur.com/aJKzXPi.png)
-![BURNING SHIP](https://i.imgur.com/8azLELF.png)
-
-
 --------------------- COMPILATION ------------------------
 
 Use the Makefile to compile (make).
@@ -36,3 +30,7 @@ fractals:
 + Left Ctrl key to freeze / un-freeze parameters
 
 -----------------------------------------------------------
+
+![MANDELBROT](https://i.imgur.com/bx1Gl4e.png)
+![JULIA (interactible)](https://i.imgur.com/aJKzXPi.png)
+![BURNING SHIP](https://i.imgur.com/8azLELF.png)
