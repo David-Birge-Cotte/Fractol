@@ -6,7 +6,7 @@
 /*   By: dbirge-c <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/13 14:18:03 by dbirge-c          #+#    #+#             */
-/*   Updated: 2018/04/13 14:18:04 by dbirge-c         ###   ########.fr       */
+/*   Updated: 2018/04/25 14:15:57 by dbirge-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ static t_color	*greyscale(int val, int nb_iteration)
 	t_color *color;
 
 	val = map(val, vector2f(0, nb_iteration), vector2f(0, 255));
-	color = new_color(val, val, val);
+	color = new_color(val, val, val, 255);
 	return (color);
 }
 
