@@ -1,5 +1,5 @@
 # Fractol
-Fractal viewer in C + SDL
+Multithreaded fractal viewer in C with SDL display.
 Tested on MacOS and Linux but it should be working on Windows too.
 
 --------------------- COMPILATION ------------------------
@@ -30,3 +30,7 @@ fractals:
 + Left Ctrl key to freeze / un-freeze parameters
 
 -----------------------------------------------------------
+
+![MANDELBROT](https://i.imgur.com/bx1Gl4e.png)
+![JULIA (interactible)](https://i.imgur.com/aJKzXPi.png)
+![BURNING SHIP](https://i.imgur.com/8azLELF.png)
