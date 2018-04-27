@@ -29,7 +29,7 @@ int	draw_burning_ship(const t_vector2ld *p, const size_t nb_iteration,
 	while (i < nb_iteration && sqr.x + sqr.y < 4)
 	{
 		xtmp = sqr.x - sqr.y + p->x;
-		pt.y = ft_absl(2 * pt.x * pt.y + p->y);
+		pt.y = ft_absl(2.0 * pt.x * pt.y + p->y);
 		pt.x = ft_absl(xtmp);
 		sqr.x = (pt.x * pt.x);
 		sqr.y = (pt.y * pt.y);

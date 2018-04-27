@@ -12,18 +12,11 @@
 
 #include "../includes/fractol.h"
 
-static void	destroy(t_vector2ld *pt, t_vector2i *pix, t_color *color)
-{
-	ft_memdel((void**)&color);
-	ft_memdel((void**)&pix);
-	ft_memdel((void**)&pt);
-}
-
 void		*draw_fractal(t_drawer_arg *args)
 {
 	t_vector2i	incr;
-	t_vector2ld	*pt;
-	t_vector2i	*pix;
+	t_vector2ld	pt;
+	t_vector2i	pix;
 	t_color		*color;
 
 	incr = vector2i(0, 0);
@@ -32,14 +25,14 @@ void		*draw_fractal(t_drawer_arg *args)
 		incr.y = args->screen_y_from;
 		while (incr.y < (int)args->screen_y_to)
 		{
-			pt = new_vector2ld(map(incr.x, vector2f(0, WIN_W), args->x_range),
-					map(incr.y, vector2f(0, WIN_H), args->y_range));
-			pix = new_vector2i(incr.x, incr.y);
-			color = color_from_val(args->func_ptr(pt, args->app->nb_itera,
+			pt.x = map(incr.x, vector2f(0, WIN_W), args->x_range);
+			pt.y = map(incr.y, vector2f(0, WIN_H), args->y_range);
+			pix = vector2i(incr.x, incr.y);
+			color = color_from_val(args->func_ptr(&pt, args->app->nb_itera,
 					args->app->para), args->app->nb_itera,
 					args->app->color_scheme, args->app->color_mode);
-			put_pixel(args->app->pixels, pix->x, pix->y, color);
-			destroy(pt, pix, color);
+			put_pixel(args->app->pixels, pix.x, pix.y, color);
+			ft_memdel((void**)&color);
 			incr.y++;
 		}
 		incr.x++;

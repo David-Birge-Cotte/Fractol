@@ -21,10 +21,10 @@ int	draw_mandelbrot(const t_vector2ld *p, const size_t nb_iteration,
 
 	param = vector2f(0, 0);
 	i = 0;
-	pt.x = 0;
-	pt.y = 0;
-	sqr.x = 0;
-	sqr.y = 0;
+	pt.x = p->x;
+	pt.y = p->y;
+	sqr.x = pt.x * pt.x;
+	sqr.y = pt.y * pt.y;
 	while (i < nb_iteration && sqr.x + sqr.y < 4)
 	{
 		pt.y = pt.y * pt.x;
